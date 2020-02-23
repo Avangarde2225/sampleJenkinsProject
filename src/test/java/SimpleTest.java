@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 public class SimpleTest {
@@ -9,5 +10,10 @@ public class SimpleTest {
         @Test
     public void secondTest(){
             System.out.println("never failint Test");
+        }
+
+        @Test
+    public void failingTest(){
+            Assert.fail("Failinggen");
         }
     }
